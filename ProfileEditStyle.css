@@ -1,0 +1,46 @@
+#ActionButtons{
+    text-align: center;
+}
+#Cancel {
+    margin: 20px 10px 10px 10px;
+}
+.descript{
+    display:inline-block;
+}
+#Fields{
+    margin: auto;
+    width: 250px;
+}
+.focused{
+    border: 2px outset #c3f7f6;
+}
+h1{
+    margin-top: 0;
+}
+.inputActive{
+    border-color: #000;
+}
+input:focus, select:focus{
+    outline: none;
+}
+label{
+    display: block;
+    font-size: 11pt;
+    margin-top: 10px;
+}
+#Menu{
+    margin-top: 0;
+}
+.RegisterField{
+    border-radius: 4px;
+}
+#EditHeader{
+    text-align: center;
+}
+.Required{
+    color: red;
+    padding: 0;
+}
+#Submit{
+    margin: 20px 10px 10px 10px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat = "server">
+    <title>MentorWeb</title>
+    <link href="StyleSheets/MainStyle.css" rel="stylesheet" />
+    <link href="StyleSheets/ProfileStyle.css" rel="stylesheet" />
+    <link href="StyleSheets/MentorSearchStyle.css" rel="stylesheet" />
+    <script src = "JavaScript/jquery-1.9.1.js"></script>
+</head>
+<body>
+    <div id = "Header">
+        <span id="ProfileName">Hello, Dan</span>
+        <div id="headerLinks">
+            <a href="Main Page.html" class="footer">Sign Out</a>
+        </div>
+    </div><!--end div "Header"-->
+    <div id ="Main">
+        
+        <div id = "Menu">
+            <img id = "logo" src="Images/logo.png" alt="MentorWeb from My Career Gym"/>
+            <div id="MenuLinks">
+                <a href ="PersonalProfile.html" class ="menu">Home</a>
+                <a href ="a" class ="menu">About</a>
+                <a href ="a" class ="menu">How It Works</a>
+            </div>
+        </div><!--end div "Menu"-->
+        <div id = "ContentMain">
+            <div id ="ContentTop"></div>
+            <div id ="Content">
+                <table id="ProfileInformation">
+                    <tr>
+                        <td id = "ProfileInfo">
+                        <table id="ProfileTable">
+                            <tr>
+                                <td>
+                                    <h3 id="ProfileOwner">Josh Lucas</h3>
+                                    <img id="ProfilePic" src="Images/ProfilePic.jpg"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="ProfileEdit">Edit Profile</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Appointments</h3>
+                                    <table id="Appointments"><!--start appointments list-->
+                                        <tr>
+                                            <td class="Appts">
+                                                <img class="ApptImg" src= "Images/ApptIcon.jpg" />
+                                            </td>
+                                            <td class="Appts">
+                                                <span>You have an appointment with mentor Daniel Franklin on May 1 at 3pm.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="Appts">
+                                                <img class="ApptImg" src= "Images/ApptIcon.jpg" /> 
+                                            </td>
+                                            <td class="Appts">
+                                                <span>You have an appointment with mentor Daniel Franklin on May 1 at 3pm.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="Appts">
+                                                <img class="ApptImg" src= "Images/ApptIcon.jpg" /> 
+                                            </td>
+                                            <td class="Appts">
+                                                <span>You have an appointment with mentor Daniel Franklin on May 1 at 3pm.</span>
+                                            </td>
+                                        </tr>
+                                    </table><!--end appointments list-->
+                                </td>
+                            </tr>
+                        </table>
+                        </td>
+                        <td id = "MentorSearch">
+                            <h2>Find Mentors</h2>
+                            <label>City:</label><input class ="MentorInput" type="text" />
+                            <label>State:</label><input class ="MentorInput" id="State" type="text" />
+                            <label>First Name:</label><input class ="MentorInput" type="text" />
+                            <label>Last Name:</label><input class ="MentorInput" type="text" />
+                            <label>Category:</label>
+                            <select>
+                                <option>PR</option>
+                                <option>HR</option>
+                                <option>Technology</option>
+                                <option>Communications</option>
+                            </select>
+                            <div id="SearchButton">
+                                <button class="primaryButton" id="Search">Search for Mentors</button>
+                            </div>
+                            <table id="results"><!--start search results-->
+                                <tr class = "MentorInfo"> <!--start 1st Mentor-->
+                                    <td id="firstCell">
+                                        <img class = "MentorPicture" src = "Images/ProfilePic.jpg" />
+                                        <p class="MentorName">Patrick Roterman</p>
+                                    </td>
+                                    <td>
+                                        <div class="rating">
+                                            <p>Average</p>
+                                            <p>Rating:</p>
+                                            <p id="rating">9.3</p>
+                                        </div>       
+                                    </td>
+                                    <td width="50%">
+                                        <div class="Description">
+                                            <p>Area(s) of Expertise: PR, Communications</p>
+                                            <p>Location: San Jose, CA</p>
+                                        </div>
+                                    </td>
+                                    <td width ="20%">
+                                        <button class="primaryButton">Send Request</button>
+                                    </td>
+                                </tr><!--end 1st Mentor-->
+                                
+                            </table><!--end search results-->
+                        </td>
+                    </tr>
+                </table>
+            </div><!--end div "Content"-->
+        </div><!--end div "ContentMain"-->
+        
+    </div><!--end div "Main"-->
+    
+    <div id ="Footer">
+        <a href ="a" class ="footer">About</a>
+        <a href ="a" class ="footer">Contact Us</a>
+        <a href ="a" class ="footer">Privacy Policy</a>
+        <a href ="a" class ="footer">Terms of Use</a>
+        <p id ="Copyright">Copyright © 2013. MentorWeb.com All Rights Reserved.</p>
+    </div><!--end div "Footer"-->
+        
+    <script src="JavaScript/MainJS.js"></script>
+    <script src="JavaScript/ProfileJS.js"></script>
+    <script src="JavaScript/MentorSearchJS.js"></script>
+</body>
+</html>

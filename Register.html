@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MentorWeb</title>
+    <link href="StyleSheets/MainStyle.css" rel="stylesheet" />
+    <link href="StyleSheets/RegistrationStyle.css" rel="stylesheet" />
+    <script src = "JavaScript/jquery-1.9.1.js"></script>
+</head>
+<body>
+    <div id ="Main">
+        <div id = "Menu">
+            <img id = "logo" src="images/logo.png" alt="MentorWeb from My Career Gym"/>
+            <div id="MenuLinks">
+                <a href ="a" class ="menu">Home</a>
+                <a href ="a" class ="menu">About</a>
+                <a href ="a" class ="menu">How It Works</a>
+            </div>
+        </div><!--end div "Menu"-->
+        <div id = "ContentMain">
+            <div id ="ContentTop"></div>
+            <div id ="Content">
+                <div id="RegisterHeader">
+                    <h1>MentorWeb Registration</h1>
+                    <p>Please enter the following information:</p>
+                    <p class="Required">* indicates a required field</p>
+                </div>
+                
+                <div id="Fields">
+                <label><span class="Required">*</span>Username: </label>
+                <input class = "RegisterField" type= "text" name = "username" id = "UserName"/>
+                
+                <label><span class="Required">*</span>Password: </label>
+                <input class = "RegisterField" type= "password" name = "pass" id = "Password"/>
+                
+                <label><span class="Required">*</span>Confirm Password: </label>
+                <input class = "RegisterField" type= "password" name = "confirmpass" id = "ConfirmPassword"/>
+                
+                <label><span class="Required">*</span>First Name: </label>
+                <input class = "RegisterField" type= "text" name = "firstname" id = "FirstName"/>
+                
+                <label><span class="Required">*</span>Last Name: </label>
+                <input class = "RegisterField" type= "text" name = "lastname" id = "LastName"/>
+                
+                <label><span class="Required">*</span>Email: </label>
+                <input class = "RegisterField" type="email" name = "email" id = "Email"/>
+                
+                <label>Phone Number: </label>
+                <input class = "RegisterField" type="text" name = "phone" id = "Phone"/>                
+                
+                <label><span class="Required">*</span>City: </label>
+                <input class = "RegisterField" type= "text" name = "city" id = "City"/>
+                
+                <label><span class="Required">*</span>State: </label>
+                <input class = "RegisterField" type= "text" name = "state" id = "State"/>
+                
+                <label>Profile Photo URL: </label>
+                <input class = "RegisterField" type="url" name = "photo" id = "ProfileURL"/>
+                <br/>
+                <br/>
+                <input type ="checkbox" id="MentorChecked" /><label class="descript">Yes I wish to be a Mentor</label><br/>
+                <label class="descript">Select a category to Mentor in:</label>
+                
+                <select title="Areas of expertise">
+                    <option>PR</option>
+                    <option>HR</option>
+                    <option>Technology</option
+                    <option>Communications</option>
+                </select>
+                
+                <br/>
+                <br/>
+                <input type ="checkbox" id="MenteeChecked" /><label class="descript">Yes I wish to be a Mentee</label><br/>
+                <label class="descript">Select a category to be mentored in:</label>
+                <select title="Mentee categories">
+                    <option>PR</option>
+                    <option>HR</option>
+                    <option>Technology</option
+                    <option>Communications</option>
+                </select>
+                <div id="ActionButtons">
+                    <button class="secondaryButton" id="Cancel"><span>Cancel</span></button>
+                    <button class="primaryButton" id="Submit"><span>Submit</span></button>
+                </div>
+                </div>
+            </div><!--end div "Content"-->
+        </div><!--end div "ContentMain"-->
+        
+    </div><!--end div "Main"-->
+    <div id ="Footer">
+        <a href ="a" class ="footer">About</a>
+        <a href ="a" class ="footer">Contact Us</a>
+        <a href ="a" class ="footer">Privacy Policy</a>
+        <a href ="a" class ="footer">Terms of Use</a>
+        <p>Copyright © 2013. MentorWeb.com All Rights Reserved.</p>
+    </div><!--end div "Footer"-->
+    
+    <script src="JavaScript/MainJS.js"></script>
+    <script src="JavaScript/RegisterJS.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+#Advantages {
+    margin-left: 40%;
+    padding-top: 20px;
+    padding-bottom: 6%;
+}
+.Assist {
+    margin: 5px 0 5px 0;
+}
+#BM {
+    float: right;
+    margin-right: 10%;
+}
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12pt;
+    background-color: #FFF;
+    background-image: url(../images/bg_gradient.jpg);
+    background-repeat: repeat-x;
+    margin: 0;
+    padding: 0;
+}
+#Content {
+    background-color: White;
+    width: 98%;
+    height: auto;
+    border-width: 0px 2px 2px 1px; 
+    border-style: solid; 
+    border-color: #ccc;
+    margin: auto;
+}
+#ContentHeader {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    text-align:center;
+}
+#ContentTop {
+    background-color: #223366;
+    width: 100%;
+    height:40px;
+}
+#Footer {
+    background-color: #223366;
+    color: #FFF;
+    width: 100%;
+    height: 75px;
+    text-align:center;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.footer {
+    margin: 10px;
+    color:white;
+    text-decoration:none;
+}
+.footer:active {
+    color: #808080;
+}
+.footer:hover {
+    color: #c3f7f6;
+}
+#Header {
+    width: 100%;
+    text-align:right;
+}
+.input{
+    display: block;
+}
+.largeButton {
+    font-size: 14pt;
+}
+#Login {
+    margin: 10px;
+    margin-right: 6%;
+}
+#LoginButtons{
+    text-align: center;
+}
+#LoginCancel, #LoginConfirm{
+    font-size:10pt;
+    padding:3px;
+}
+#LoginInfo {
+    background-color: #FFF;
+    visibility: visible;
+    display: none;
+    width: auto;
+    position: absolute;
+    top:5px;
+    right: 5%;
+    text-align: left;
+    z-index: 2;
+}
+#logo {
+   position: relative;
+   top: 0;
+   left: 0; 
+   display:inline;
+}
+#Main {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.menu {
+    text-decoration: none;
+    color: #444;
+    font-size: 16pt;
+    margin: 15px;
+}
+#Menu {
+    margin: auto;
+    position: relative;
+    height: auto;
+    margin-top: -20px;
+}
+#MenuLinks {
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+.menu:active {
+    color: black; 
+}
+.menu:hover {
+    color: #14196d;
+}
+.primaryButton {
+    color: #FFF;
+    border: 1px ridge #000;
+    border-radius: 4px;
+    background-color: #223366;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12pt;
+}
+.primaryHover {
+    background-color: #05afba;
+}
+.secondaryButton{
+    color: #444;
+    background-color: #CCC;
+    border: 1px ridge #000;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12pt;
+}
+.secondaryHover{
+    background-color: #EEE;
+}
+span{
+    padding: 10px;
+}
+#Video {
+    float: left;
+    margin-left: 10px;
+}
+#VideoPicture{
+    height: 75%;
+    width: 75%;
+}

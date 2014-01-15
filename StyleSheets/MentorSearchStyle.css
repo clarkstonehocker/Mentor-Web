@@ -1,0 +1,34 @@
+input{
+    width: 75px;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+#firstCell{
+    width: 15%;
+    text-align: center;
+}
+.focus{
+    border: 2px outset black;
+}
+label{
+    margin-left: 5px;
+}
+#MentorSearch{
+    vertical-align: top;
+}
+#results{
+    margin:20px 0 10px 15px;
+    width:95%;
+    border-collapse: collapse;
+}
+#Search{
+    margin: 10px 20px 0 0;
+}
+#SearchButton{
+    text-align:right;
+}
+#State{
+    width: 30px;
+}

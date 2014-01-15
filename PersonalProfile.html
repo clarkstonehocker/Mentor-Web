@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat = "server">
+    <title>MentorWeb</title>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.timepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="jquery.timepicker.css" />
+  <script type="text/javascript" src="lib/base.js"></script>
+  <link rel="stylesheet" type="text/css" href="lib/base.css" />
+    
+    <link href="StyleSheets/MainStyle.css" rel="stylesheet" />
+    <link href="StyleSheets/ProfileStyle.css" rel="stylesheet" />
+    <!--<script src = "JavaScript/jquery-1.8.3.js"></script>-->
+    
+    
+    
+</head>
+<body>
+    <div id = "Header">
+        <span id="ProfileName">Hello, <a href="PersonalProfile.html" class="footer">Dan</a></span>
+        <div id="headerLinks">
+            <a href="Main Page.html" class="footer">Sign Out</a>
+        </div>
+    </div><!--end div "Header"-->
+    <div id ="Main">
+        
+        <div id = "Menu">
+            <img id = "logo" src="Images/logo.png" alt="MentorWeb from My Career Gym"/>
+            <div id="MenuLinks">
+                <a href ="a" class ="menu">Home</a>
+                <a href ="a" class ="menu">About</a>
+                <a href ="a" class ="menu">How It Works</a>
+            </div>
+        </div><!--end div "Menu"-->
+        <div id = "ContentMain">
+            <div id ="ContentTop"></div>
+            <div id ="Content">
+                <table id="ProfileInformation">
+                    <tr>
+                        <td id = "ProfileInfo">
+                        <table id="ProfileTable">
+                            <tr>
+                                <td>
+                                    <h3 id="ProfileOwner">Josh Lucas</h3>
+                                    <img id="ProfilePic" src="Images/ProfilePic.jpg"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="ProfileEdit">Edit Profile</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3><a href ="Appointments.html" id="ApptLink">Appointments</a></h3>
+                                    <table id="Appointments">
+                                        <tr>
+                                            <td class="Appts">
+                                                <img class="ApptImg" src= "Images/ApptIcon.jpg" />
+                                            </td>
+                                            <td class="Appts">
+                                                <span>You have an appointment with mentor Daniel Franklin on May 1 at 3pm.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="Appts">
+                                                <img class="ApptImg" src= "Images/ApptIcon.jpg" /> 
+                                            </td>
+                                            <td class="Appts">
+                                                <span>You have an appointment with mentor Daniel Franklin on May 1 at 3pm.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="Appts">
+                                                <img class="ApptImg" src= "Images/ApptIcon.jpg" /> 
+                                            </td>
+                                            <td class="Appts">
+                                                <span>You have an appointment with mentor Daniel Franklin on May 1 at 3pm.</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        </td>
+                        <td id = "MentorsAndMentees">
+                            <table class="MentorsMentees"><!--start Mentors-->
+                                <tr id="MentorsHeader">
+                                    <td class = "MentorsHeader" colspan = 2>
+                                        <span class = "MentorsMenteesHeaderText">Mentors</span>
+                                    </td>
+                                    <td class = "MentorsHeader" id = "MentorsAdd" colspan = 2>
+                                        <button class="primaryButton" id="AddMentors"><span>Add Mentors</span></button>
+                                    </td>
+                                </tr>
+                                <tr class = "MentorInfo"> <!--start 1st Mentor-->
+                                    <td width = "60px">
+                                        <img class = "MentorPicture" src = "Images/ProfilePic.jpg" />
+                                    </td>
+                                    <td class = "NameOfMentor">
+                                        <span class = "MentorName">Josh Lucas</span>
+                                        <label>Star rating:</label>
+                                        <select class = "MentorRating">
+                                            <option>5</option>
+                                            <option>4</option>
+                                            <option>3</option>
+                                            <option>2</option>
+                                            <option>1</option>
+                                        </select>
+                                    </td>
+                                    <td><!--Schedule Appt cell-->
+                                        <div class = "MentorAppt">
+                                            <!--Div for scheduling appointment via plugin-->
+                                            <div class="example" style = "display:none">
+                                                <script src="lib/datepair.js"></script>
+                                                <p class="datepair" data-language="javascript">
+                                                    <b id="AptDetails">Appoinment Details</b><br/>
+                                                    <label>Date:</label><input type="text" id="sdate" class="date start" />
+                                                    <label>From:</label><input type="text" class="time start" />
+                                                    <label>To:</label><input type="text" class="time end" />
+                                                </p>
+                                                <button class="secondaryButton AptCancel">Cancel</button>
+                                                <button class="primaryButton AptSubmit">Schedule</button>
+                                            </div><!--end plugin-->
+                        
+                                            <button class = "primaryButton ScheduleApt"><span>Schedule Appointment</span></button>
+                                        </div>
+                                    </td><!--end schedule appt cell-->
+                                    <td>
+                                        <img class = "chatIcon" src = "Images/ChatIcon.jpg" />
+                                    </td>
+                                </tr><!--end 1st Mentor-->
+                                
+                                <tr class = "MentorInfo"><!--start 2nd Mentor-->
+                                    <td width = "60px">
+                                        <img class = "MentorPicture" src = "Images/ProfilePic.jpg" />
+                                    </td>
+                                    <td>
+                                        <span class = "MentorName">Josh Lucas</span>
+                                        <label>Star rating:</label>
+                                        <select class = "MentorRating">
+                                            <option>5</option>
+                                            <option>4</option>
+                                            <option>3</option>
+                                            <option>2</option>
+                                            <option>1</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class = "MentorAppt">
+                                            <!--Div for scheduling appointment via plugin-->
+                                            <div class="example" style = "display:none">
+                                                <script src="lib/datepair.js"></script>
+                                                <p class="datepair" data-language="javascript">
+                                                    <b id="AptDetails">Appoinment Details</b><br/>
+                                                    <label>Date:</label><input type="text" id="sdate" class="date start" />
+                                                    <label>From:</label><input type="text" class="time start" />
+                                                    <label>To:</label><input type="text" class="time end" />
+                                                </p>
+                                                <button class="secondaryButton AptCancel">Cancel</button>
+                                                <button class="primaryButton AptSubmit">Schedule</button>
+                                            </div><!--end plugin-->
+                                            <button class = "primaryButton ScheduleApt"><span>Schedule Appointment</span></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img class = "chatIcon" src = "Images/ChatIcon.jpg" />
+                                    </td>
+                                </tr><!--end 2nd Mentor-->
+                                
+                            </table><!--end Mentors-->
+                                
+                            <table class="MentorsMentees" id = "Mentees"><!--start Mentees-->
+                                <tr><!--Mentees header-->
+                                    <td class = "MentorsHeader" colspan = 2>
+                                        <span class = "MentorsMenteesHeaderText">Mentees</span>
+                                    </td>
+                                    <td class = "MentorsHeader" id = "Pending" colspan = 2>
+                                        <button class="primaryButton" id="PendingRequests"><span>View Pending Requests</span></button>
+                                    </td>
+                                </tr>
+                                <tr class = "MentorInfo"><!--start 1st Mentee-->
+                                    <td width = "60px">
+                                        <img class = "MentorPicture" src = "Images/ProfilePic.jpg" />
+                                    </td>
+                                    <td>
+                                        <span class = "MentorName">Josh Lucas</span>
+                                    </td>
+                                    <td>
+                                        <div class = "MentorAppt">
+                                            <!--Div for scheduling appointment via plugin-->
+                                            <div class="example" style = "display:none">
+                                                <script src="lib/datepair.js"></script>
+                                                <p class="datepair" data-language="javascript">
+                                                    <b id="AptDetails">Appoinment Details</b><br/>
+                                                    <label>Date:</label><input type="text" id="sdate" class="date start" />
+                                                    <label>From:</label><input type="text" class="time start" />
+                                                    <label>To:</label><input type="text" class="time end" />
+                                                </p>
+                                                <button class="secondaryButton AptCancel">Cancel</button>
+                                                <button class="primaryButton AptSubmit">Schedule</button>
+                                            </div><!--end plugin-->
+                                            <button class = "primaryButton ScheduleApt"><span>Schedule Appointment</span></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img class = "chatIcon" src = "Images/ChatIcon.jpg" />
+                                    </td>
+                                </tr><!--end 1st Mentee-->
+                                
+                                <tr class = "MentorInfo"><!--start 2nd Mentee-->
+                                    <td width = "60px">
+                                        <img class = "MentorPicture" src = "Images/ProfilePic.jpg" />
+                                    </td>
+                                    <td>
+                                        <span class = "MentorName">Josh Lucas</span>
+                                    </td>
+                                    <td>
+                                        <div class = "MentorAppt">
+                                            <!--Div for scheduling appointment via plugin-->
+                                            <div class="example" style = "display:none">
+                                                <script src="lib/datepair.js"></script>
+                                                <p class="datepair" data-language="javascript">
+                                                    <b id="AptDetails">Appoinment Details</b><br/>
+                                                    <label>Date:</label><input type="text" id="sdate" class="date start" />
+                                                    <label>From:</label><input type="text" class="time start" />
+                                                    <label>To:</label><input type="text" class="time end" />
+                                                </p>
+                                                <button class="secondaryButton AptCancel">Cancel</button>
+                                                <button class="primaryButton AptSubmit">Schedule</button>
+                                            </div><!--end plugin-->
+                                            <button class = "primaryButton ScheduleApt"><span>Schedule Appointment</span></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img class = "chatIcon" src = "Images/ChatIcon.jpg" />
+                                    </td>
+                                </tr><!--end 2nd Mentee-->
+                            </table><!--end Mentees-->
+                        </td>
+                    </tr>
+                </table>
+            </div><!--end div "Content"-->
+        </div><!--end div "ContentMain"-->
+        
+    </div><!--end div "Main"-->
+    
+    <div id ="Footer">
+        <a href ="a" class ="footer">About</a>
+        <a href ="a" class ="footer">Contact Us</a>
+        <a href ="a" class ="footer">Privacy Policy</a>
+        <a href ="a" class ="footer">Terms of Use</a>
+        <p id="Copyright">Copyright © 2013. MentorWeb.com All Rights Reserved.</p>
+    </div><!--end div "Footer"-->
+        
+    <script src="JavaScript/MainJS.js"></script>
+    <script src="JavaScript/ProfileJS.js"></script>
+</body>
+</html>

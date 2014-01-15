@@ -1,0 +1,123 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12pt;
+	background-color: #FFF;
+	background-image: url(../images/bg_gradient.jpg);
+	background-repeat: repeat-x;
+    margin: 0;
+    padding: 0;
+}
+#Main {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+#Header {
+    width: 100%;
+    text-align:right;
+    
+}
+#Login {
+    font-size: 14px;
+    margin: 10px;
+}
+#logo {
+   position: relative;
+   top: 0;
+   left: 0; 
+   display:inline;
+}
+
+.primaryButton {
+    color: #FFF;
+    border: 1px ridge #FFF;
+    border-radius: 8px;
+    background-color: #223366;
+}
+
+#Menu {
+    margin: auto;
+    position: relative;
+    height: auto;
+    margin-top: -20px;
+}
+#MenuLinks {
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+.menu {
+    text-decoration: none;
+    color: #444;
+    font-size: 16pt;
+    margin: 15px;
+}
+.menu:hover {
+    color: #14196d;
+}
+.menu:active {
+    color: black; 
+}
+#ContentMain {
+    
+}
+#Content {
+    background-color: White;
+    width: 98%;
+    height: auto;
+    border-width: 0px 2px 2px 1px; 
+    border-style: solid; 
+    border-color: #ccc;
+    margin: auto;
+}
+#ContentTop {
+    background-color: #223366;
+    width: 100%;
+    height:40px;
+}
+#ContentHeader {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    text-align:center;
+}
+#Video {
+    display:inline-block;
+    margin-left: 10px;
+}
+#Advantages {
+    display: inline-block;
+    float: right;
+    padding: 75px 25px 8px 8px;
+}
+.Assist {
+    margin: 5px 0 5px 0;
+}
+.largeButton {
+    font-size: 14pt;
+}
+#BM {
+    float: right;
+}
+
+#Footer {
+    background-color: #14196d;
+    color: #FFF;
+    width: 100%;
+    height: 75px;
+    text-align:center;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.footer {
+    margin: 10px;
+    color:white;
+    text-decoration:none;
+}
+.footer:hover {
+    color: #c3f7f6;
+}
+.footer:active {
+    color: #808080;
+}
