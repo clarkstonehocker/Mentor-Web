@@ -90,6 +90,7 @@ body {
     right: 5%;
     text-align: left;
     z-index: 2;
+    padding: 5px;
 }
 #logo {
    position: relative;
